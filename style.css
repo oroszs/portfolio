@@ -2,6 +2,9 @@
     --transparent-color: rgba(0,0,0,0);
     --trans-white: rgba(255, 255, 255, 1);
     --dark-blue: rgb(0, 20, 45);
+    --trans-light-blue: rgba(112, 229, 255, 0.484);
+    --light-blue: rgb(40, 116, 154);
+    --navbar-height: 100px;
 }
 body {
     margin: 0px;
@@ -9,6 +12,37 @@ body {
 }
 #navbar {
     position: fixed;
+    width: 100%;
+    height: var(--navbar-height);
+    background: linear-gradient(to bottom, var(--light-blue) 0%, var(--transparent-color) 100%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-links {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    width: fit-content;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.nav-link {
+    margin: 0 10px 0 10px;
+    flex: none;
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-padding-top: var(--navbar-height);
 }
 #welcome-section {
     color: white;
@@ -65,7 +99,7 @@ h1 {
     height: 55px;
 }
 #projects-section {
-    background-color: rgb(0, 96, 118);
+    background-color: var(--light-blue);
     width: 100%;
     padding: 25px;
     box-sizing: border-box;
@@ -138,4 +172,10 @@ h1 {
     display: inline-block;
     width: 50px;
     height: 50px;
+}
+#art-section {
+    background-color: var(--dark-blue);
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
 }
