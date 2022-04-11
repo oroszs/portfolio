@@ -163,6 +163,10 @@ h1 {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://live.staticflickr.com/65535/51992869061_5126cfe084_o.jpg);
 }
+#eggdrop {
+    background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
+                      url(https://live.staticflickr.com/65535/51997934039_d502d0e854_o.jpg);
+}
 .temp{
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://i.imgur.com/jWBxLEb.jpg?1);
