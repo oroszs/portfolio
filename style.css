@@ -6,9 +6,9 @@
     --light-blue: rgb(40, 116, 154);
     --navbar-height: 100px;
     --project-tile-large: 350px;
-    --project-tile-small: 100px;
+    --project-tile-small: 250px;
 }
-*{
+html {
     scroll-padding-top: var(--navbar-height);
     scroll-behavior: smooth;
 }
@@ -183,11 +183,6 @@ h1 {
     box-sizing: border-box;
 }
 @media screen and (max-width: 500px) {
-    #projects-div {
-        gap: 10px 10px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
     .project-tile{
         width: var(--project-tile-small);
         height: var(--project-tile-small);
@@ -195,12 +190,5 @@ h1 {
     .project-img-div {
         width: calc(var(--project-tile-small) - 20px);
         height: calc(var(--project-tile-small) - 20px);
-    }
-    .project-title{
-        font-size: 9pt;
-        padding: 2.5px;
-    }
-    #projects {
-        padding: 5px;
     }
 }
