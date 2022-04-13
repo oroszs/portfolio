@@ -5,6 +5,12 @@
     --trans-light-blue: rgba(112, 229, 255, 0.484);
     --light-blue: rgb(40, 116, 154);
     --navbar-height: 100px;
+    --project-tile-large: 350px;
+    --project-tile-small: 150px;
+}
+html{
+    scroll-padding-top: var(--navbar-height);
+    scroll-behavior: smooth;
 }
 body {
     margin: 0px;
@@ -40,9 +46,6 @@ body {
     color: white;
     font-size: 16pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-html{
-    scroll-padding-top: var(--navbar-height);
 }
 #welcome-section {
     color: white;
@@ -98,7 +101,7 @@ h1 {
     width: 55px;
     height: 55px;
 }
-#projects-section {
+#projects {
     background-color: var(--light-blue);
     width: 100%;
     padding: 25px;
@@ -117,12 +120,12 @@ h1 {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.project-div {
+.project-tile {
     box-sizing: border-box;
     background-color: rgb(0, 20, 45);
     flex: none;
-    width: 350px;
-    height: 350px;
+    width: var(--project-tile-large);
+    height: var(--project-tile-large);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -139,21 +142,15 @@ h1 {
     flex: none;
     z-index: 6;
     font-size: 20pt;
+    margin: 0px;
 }
 .project-img-div {
     position: relative;
     border-radius: 100%;
-    width: 300px;
-    height: 300px;
+    width: calc(var(--project-tile-large) - 50px);
+    height: calc(var(--project-tile-large) - 50px);
     background-size: cover;
     background-position: center;
-}
-.project-img {
-    flex: none;
-    position: relative;
-    width: 620px;
-    height: auto;
-    z-index: 1;
 }
 #photo {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
@@ -186,4 +183,24 @@ h1 {
     width: 100%;
     padding: 25px;
     box-sizing: border-box;
+}
+@media screen and (max-width: 500px) {
+    #projects-div {
+        gap: 25px 25px;
+    }
+    .project-tile{
+        width: var(--project-tile-small);
+        height: var(--project-tile-small);
+    }
+    .project-img-div {
+        width: calc(var(--project-tile-small) - 20px);
+        height: calc(var(--project-tile-small) - 20px);
+    }
+    .project-title{
+        font-size: 14pt;
+        padding: 5px;
+    }
+    #projects {
+        padding: 10px;
+    }
 }
