@@ -6,7 +6,7 @@
     --light-blue: rgb(40, 116, 154);
     --navbar-height: 100px;
     --project-tile-large: 350px;
-    --project-tile-small: 150px;
+    --project-tile-small: 125px;
 }
 html{
     scroll-padding-top: var(--navbar-height);
@@ -197,7 +197,7 @@ h1 {
         height: calc(var(--project-tile-small) - 20px);
     }
     .project-title{
-        font-size: 14pt;
+        font-size: 12pt;
         padding: 5px;
     }
     #projects {
