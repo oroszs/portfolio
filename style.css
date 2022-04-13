@@ -8,7 +8,7 @@
     --project-tile-large: 350px;
     --project-tile-small: 100px;
 }
-html{
+*{
     scroll-padding-top: var(--navbar-height);
     scroll-behavior: smooth;
 }
