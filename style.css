@@ -6,7 +6,7 @@
     --light-blue: rgb(40, 116, 154);
     --navbar-height: 100px;
     --project-tile-large: 350px;
-    --project-tile-small: 125px;
+    --project-tile-small: 100px;
 }
 html{
     scroll-padding-top: var(--navbar-height);
@@ -186,7 +186,9 @@ h1 {
 }
 @media screen and (max-width: 500px) {
     #projects-div {
-        gap: 25px 25px;
+        gap: 10px 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     .project-tile{
         width: var(--project-tile-small);
@@ -197,10 +199,10 @@ h1 {
         height: calc(var(--project-tile-small) - 20px);
     }
     .project-title{
-        font-size: 12pt;
-        padding: 5px;
+        font-size: 9pt;
+        padding: 2.5px;
     }
     #projects {
-        padding: 10px;
+        padding: 5px;
     }
 }
