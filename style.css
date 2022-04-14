@@ -6,6 +6,7 @@
     --trans-light-blue: rgba(112, 229, 255, 0.484);
     --light-blue: rgb(40, 116, 154);
     --navbar-height: 100px;
+    --art-tile-large: 300px;
     --project-tile-large: 350px;
     --project-tile-small: 250px;
 }
@@ -144,9 +145,8 @@ h1 {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.project-tile {
+.tile {
     box-sizing: border-box;
-    background-color: rgb(0, 20, 45);
     flex: none;
     width: var(--project-tile-large);
     height: var(--project-tile-large);
@@ -157,6 +157,12 @@ h1 {
     justify-content: center;
     padding: 10px;
     box-shadow: black 15px 15px 15px;
+}
+.project-tile{
+    background-color: var(--dark-blue);
+}
+.art-tile {
+    background-color: var(--light-blue);
 }
 .project-title {
     position: absolute;
@@ -177,6 +183,34 @@ h1 {
     background-size: cover;
     background-position: center;
     outline: solid white 5px;
+}
+#art-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    gap: 100px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.art-img-div {
+    position: relative;
+    border-radius: 100%;
+    width: calc(var(--project-tile-large) - 50px);
+    height: calc(var(--project-tile-large) - 50px);
+    outline: solid white 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.art-img {
+    flex: none;
+    width: var(--art-tile-large);
+    height: auto;
+    margin: auto;
 }
 #photo {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
