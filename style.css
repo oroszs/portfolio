@@ -1,5 +1,6 @@
 :root{
     --transparent-color: rgba(0,0,0,0);
+    --transparent-half: rgba(0, 0, 0, 0.60);
     --trans-white: rgba(255, 255, 255, 1);
     --dark-blue: rgb(0, 20, 45);
     --trans-light-blue: rgba(112, 229, 255, 0.484);
@@ -71,7 +72,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 #link-div {
     flex: none;
@@ -105,6 +106,31 @@ h1 {
     padding: 25px;
     box-sizing: border-box;
 }
+.header {
+    font-size: 30pt;
+    background-color: var(--transparent-half);
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+}
+#profile-div {
+    width: 300px;
+    height: 300px;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    outline: solid white 5px;
+    overflow: hidden;
+}
+#profile-picture {
+    width: 350px;
+    height: 350px;
+    flex: none;
+}
 #projects-div {
     position: relative;
     display: flex;
@@ -130,11 +156,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    box-shadow: black 15px 15px 15px;
 }
 .project-title {
     position: absolute;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: var(--transparent-half);
     border-radius: 15px;
     padding: 10px;
     flex: none;
@@ -149,6 +176,7 @@ h1 {
     height: calc(var(--project-tile-large) - 50px);
     background-size: cover;
     background-position: center;
+    outline: solid white 5px;
 }
 #photo {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
