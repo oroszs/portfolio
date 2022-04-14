@@ -115,6 +115,12 @@ h1 {
     width: fit-content;
     margin: auto;
 }
+.sub-header {
+    color: white;
+    font-size: 20pt;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 #profile-div {
     width: 300px;
     height: 300px;
@@ -124,7 +130,7 @@ h1 {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    outline: solid white 5px;
+    border: solid white 5px;
     overflow: hidden;
 }
 #profile-picture {
@@ -132,7 +138,7 @@ h1 {
     height: 350px;
     flex: none;
 }
-#projects-div {
+.projects-div {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -182,7 +188,7 @@ h1 {
     height: calc(var(--project-tile-large) - 50px);
     background-size: cover;
     background-position: center;
-    outline: solid white 5px;
+    border: solid white 5px;
 }
 #art-div {
     display: flex;
@@ -211,6 +217,28 @@ h1 {
     width: var(--art-tile-large);
     height: auto;
     margin: auto;
+}
+.modal {
+    position: fixed;
+    width: auto;
+    height: 80vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.modalImg {
+    width: auto;
+    height: 100%;
+    position: relative;
+    flex: none;
+    z-index: 11;
 }
 #photo {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
