@@ -205,7 +205,7 @@ h1 {
     border-radius: 100%;
     width: calc(var(--project-tile-large) - 50px);
     height: calc(var(--project-tile-large) - 50px);
-    outline: solid white 5px;
+    border: solid white 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
